@@ -91,6 +91,8 @@ body {
     width:960px;
     font-weight: bold;
     padding: 20px;
+    animation-name: contacani;
+    animation-duration: 2s;
 }
 .nameemailmessage {
     padding: 20px;
@@ -139,6 +141,8 @@ body {
 }
 .portfolio2 {
     padding: 10px 30px;
+    animation-name: portani2;
+    animation-duration: 2s;
 }
 .portfolio34 {
     width: 100%;
@@ -150,6 +154,9 @@ body {
 }
 .portfolio4 {
     padding: 10px 10px;
+    animation-name: portani4;
+    animation-duration: 2s;
+    
 }
 .portfolio5a {
     width: 100%;
@@ -160,6 +167,199 @@ body {
     float: left;
 }
 
-  
-
 /* Portfolio CSS code above */
+/* PSEUDO CSS below */
+
+/* a is the links */
+a:default {
+    color: goldenrod;
+}
+a:hover {
+    color: orangered;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 10px outset yellowgreen;
+}
+a:active {
+    background-color: yellow;
+}
+a:focus {
+    background-color: black;
+    font-size: 50%;
+}
+
+/* image is the profile picture */
+.image:default {}
+.image:hover {
+    border: 10px outset yellowgreen;
+    padding: 20px;
+}
+.image:active {
+    background-color: goldenrod;
+}
+.image:focus {
+    background-color: black;
+    font-size: 300%;
+}
+
+/* words is the information about me */
+.words:default {}
+.words:hover {
+    font-size: 125%;
+}
+.words:active {
+    background-color: yellow;
+}
+.words:focus {
+    background-color: black;
+    font-size: 300%;
+}
+
+
+/* porfolio1 is the cat image in the portfolio section */
+.portfolio1:default {}
+.portfolio1:hover {
+    padding: 10px 25px 15px 10px;
+}
+.portfolio1:active {
+    background-color: yellow;
+}
+.portfolio1:focus {
+    background-color: black;
+    font-size: 300%;
+}
+
+/* porfolio4 is the image with the vegetables in the portfolio section */
+.portfolio4:default {}
+.portfolio4:hover {
+    padding: 10px 25px 15px 10px;
+}
+.portfolio4:active {
+    background-color: grey;
+}
+.portfolio4:focus {
+    background-color: black;
+    font-size: 300%;
+}
+
+
+/* NAME is the profile picture */
+.NAME:default {}
+.NAME:hover {
+    color: skyblue;
+    border: 10px outset yellowgreen;
+    padding: 20px;
+}
+.NAME:active {
+    background-color: goldenrod;
+    width: 150%;
+}
+.NAME:focus {
+    background-color: black;
+    font-size: 300%;
+}
+/* PSEUDO CSS code above */
+
+/* MEDIA QUERIES code below */
+
+@media (max-width:980px){
+    .header {
+        width: 90%;   
+    }
+    .top {
+        width: 90%;
+    }
+    .content, .content2 {
+        width: 90%;
+    }  
+    .words {
+        font-size: 100%;
+        width: 95%;
+    }
+}
+@media (max-width:768px){
+    .header {
+        width: 70%;   
+    }
+    .content, .content2 {
+        width: 70%;
+    }  
+    .words {
+        font-size: 80%;
+        width: 95%;
+    }
+}
+@media (max-width:640px){
+    .header {
+        position: static;
+    }
+    .top {
+        position: static;
+    }
+    .content, .content2 {
+        width: 60%;
+        height: 500px; 
+    }  
+    .NAME {
+        font-size: 90%;
+        height: 25px;
+    }
+    .link {
+        font-size: 90%;
+        height: 50px;
+    }
+    .words {
+        font-size: 70%;
+        width: 95%;
+    }
+}
+/* MEDIA QUERIES code above */
+
+
+/* Animations CSS code below */
+
+@keyframes contacani {
+    0% {
+        padding: 10px 0px 0px 900px;
+        color: black;
+    }
+    100% {
+        padding: 10px 900px 0px 20px;
+        color:goldenrod;
+    }
+}
+
+@keyframes portani4 {
+    0% {
+        background-color: black;
+        padding: 0px 30px 0px 10px;
+        }
+    50% {
+        background-color: blue;
+        padding: 0px 60px 0px 30px
+        float: right;
+        }
+    100% {
+        background-color: olive;
+        padding: 0px 40px 0px 20px
+        }
+}
+
+@keyframes portani2 {
+      0% {
+          background-color: orange;
+          padding: 20px;
+        }
+     50% {
+         background-color: blue;
+         padding: 10px;
+         width: 50%; 
+        }
+     100% {
+         background-color: olive;
+         padding: 15px;
+    }
+
+
+
+/* Animations CSS code above */
